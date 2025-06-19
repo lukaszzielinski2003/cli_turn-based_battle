@@ -38,6 +38,44 @@ Battle until you or the enemy is defeated
 
 After the battle, choose if you want to play again
 
+# Sample
+
+```bash
++---------------------------+
+|     Welcome to CLI RPG    |
++---------------------------+
+|     Available Enemies:    |
++---------------------------+
+| 1. Troll (easy)           |
+| 2. Knight (medium)        |
+| 3. Dragon (hard)          |
++---------------------------+
+| Press Ctrl + C to exit    |
++---------------------------+
+Choose your opponent (1–3): 1
+
+==================================================================
+The battle has started between Zeril (HP: 100) and Troll (HP: 80)
+==================================================================
+
+1. Attack | 2. Heal
+Choose your action: 1
+
+===============================================
+                  Turn: 1
+-----------------------------------------------
+Zeril hit for 20 damage
+Troll now has 60 HP left
+-----------------------------------------------
+-----------------------------------------------
+Troll hit for 25 damage
+Zeril now has 75 HP left
+-----------------------------------------------
+===============================================
+1. Attack | 2. Heal
+Choose your action:
+```
+
 # License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
