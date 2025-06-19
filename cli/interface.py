@@ -1,11 +1,17 @@
 import os
 
 
-def clear_screen():
+def clear_screen() -> None:
+    """
+    Clears the terminal after each battle.
+    """
     os.system("cls" if os.name == "nt" else "clear")
 
 
-def show_menu():
+def show_menu() -> None:
+    """
+    Displays the main menu with a list of available enemies.
+    """
     print("+---------------------------+")
     print("|     Welcome to CLI RPG    |")
     print("+---------------------------+")
@@ -19,13 +25,19 @@ def show_menu():
     print("+---------------------------+")
 
 
-def battle_menu(hero, opponent):
+def battle_menu(hero: str, opponent: str) -> None:
+    """
+    Displays the start of every battle between the hero and the opponent.
+    """
     print("==================================================================")
     print(f"The battle has started between {hero} and {opponent}")
     print("==================================================================\n")
 
 
-def turn_number(turn):
+def turn_number(turn: int) -> int:
+    """
+    Increments and displays the current turn number.
+    """
     turn += 1
     print(f"                  Turn: {turn}")
     return turn
